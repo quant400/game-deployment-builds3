@@ -80,7 +80,7 @@
             <div class="game-loading">
                <div class="loading-bar" id="unity-loading-bar">
                   <div class="progress" id="unity-progress-bar-empty">
-                     <div id="unity-progress-bar-full" style = "background:#009453"></div>
+                     <div id="unity-progress-bar-full" style = "background:#0053B7"></div>
                   </div>
                   <div class="loading-status">LOADING</div> 
                </div>   
@@ -89,12 +89,12 @@
       </div>
 
       <script>
-         var texts = ["One of these days, Travis is going to meet that line. And cross it. For his sake and our entertainment, we'll all be there for the ride. What an absolute monster of content for what, 20, 25 years? Been watching Pastrana since the 90's", 
-                     "This is loading tip line 1", 
-                     "This is loading tip line 2", 
-                     "This is loading tip line 3", 
-                     "This is loading tip line 4", 
-                     "This is loading tip line 5"];
+         var texts = ["$JUICE AND $FIGHT. GOOD FOR PURCHASING $GEAR, AND OTHER FUN THINGS. COLLECT THE CASH MONEY AND USE IT TO DESTROY OTHER PEOPLE. :)", 
+                     "FIGHTERS HAVE DIFFERENT STATS BASED ON RARITY. IF YOU OWN A WEAKLING YOU’LL NEED $GEAR AND A LONGER TERM STAKE TO IMPROVE THEIR STATS.", 
+                     "FIGHTER EVOLUTION IS A COOL THING WE LET YOU DO. ENABLE YOUR GAME ACCOUNT WITH WEB3 TOKEN $FIGHT TO WATCH YOUR FIGHTER EVOLVE.", 
+                     "CFC IS A WEB2 PLATFORM WITH WEB3 ELEMENTS! WOW! IT’S JUST LIKE AN ANCIENT INTERNET GAMES ARCADE, BUT YOU CAN REAP REAL-LIFE REWARDS.", 
+                     "NOT GETTING THE MOST OUT OF YOUR CFC EXPERIENCE? OUR COOLEST, MOST ATTRACTIVE PLAYERS CHILL IN DISCORD WHERE EXCITING EVENTS ARE ALWAYS ON.", 
+                     "HOLDERS OF WEB3 FIGHTERS GAIN ACCESS TO EXCLUSIVE EVENTS AND REWARDS, HELD EVERY MONTH. DO A HARD LURK ON OUR DISCORD UNTIL THE NEXT ONE."];
          
          var randomIndex = Math.floor(Math.random() * texts.length);
          var dynamicText = document.getElementById("loading-tips");
@@ -106,13 +106,13 @@
       <script>var buildUrl = "Build";
          var loaderUrl = buildUrl + "/45d1cd8c7243f6a432b90f192dcbf0d4.js";
          var config = {
-           dataUrl: buildUrl + "/81854afebd661ee8c6f1475ca6c894af.data.unityweb",
-           frameworkUrl: buildUrl + "/cdcfe65cc817c19d87631ee93cf0b8b4.js.unityweb",
-           codeUrl: buildUrl + "/b89b009c6598333ef583af09ef1749fe.wasm.unityweb",
+           dataUrl: buildUrl + "/5faf65a86d7f88291a6dbb3f7489535b.data.unityweb",
+           frameworkUrl: buildUrl + "/775b1e45cbd58e59aeda4a1deb4c9ce5.js.unityweb",
+           codeUrl: buildUrl + "/93f527bd156e910155f9c67252b765e9.wasm.unityweb",
            streamingAssetsUrl: "StreamingAssetsP",
            companyName: "cfcinc",
            productName: "CFC Arcade - PvP Battle Royale",
-           productVersion: "0.043",
+           productVersion: "0.045",
          };
          
          var container = document.querySelector("#unity-container");
@@ -144,13 +144,13 @@
           createUnityInstance(canvas, config, (progress) => {
              progressBarFull.style.width = 100 * progress + "%";
            },{
-        dataUrl: "Build/81854afebd661ee8c6f1475ca6c894af.data.unityweb",
-        frameworkUrl: "Build/cdcfe65cc817c19d87631ee93cf0b8b4.js.unityweb",
-        codeUrl: "Build/b89b009c6598333ef583af09ef1749fe.wasm.unityweb",
+        dataUrl: "Build/5faf65a86d7f88291a6dbb3f7489535b.data.unityweb",
+        frameworkUrl: "Build/775b1e45cbd58e59aeda4a1deb4c9ce5.js.unityweb",
+        codeUrl: "Build/93f527bd156e910155f9c67252b765e9.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssetsP",
         companyName: "cfcinc",
         productName: "CFC Arcade - PvP Battle Royale",
-        productVersion: "0.043",
+        productVersion: "0.045",
       })
       .then((instance) =>
       {
